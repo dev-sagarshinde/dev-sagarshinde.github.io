@@ -1,7 +1,474 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bottom Navigation</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <!-- Desktop Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <h4 class="text-center">Menu</h4>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Mobile Bottom Navigation -->
+  <div class="bottom-nav d-md-none">
+    <a href="#">
+      <img src="https://via.placeholder.com/24" alt="Home">
+      <span>Home</span>
+    </a>
+    <a href="#">
+      <img src="https://via.placeholder.com/24" alt="Search">
+      <span>Search</span>
+    </a>
+    <a href="#">
+      <img src="https://via.placeholder.com/24" alt="Services">
+      <span>Services</span>
+    </a>
+    <a href="#">
+      <img src="https://via.placeholder.com/24" alt="Contact">
+      <span>Contact</span>
+    </a>
+  </div>
+
+  <!-- Content -->
+  <div class="content" id="content">
+    <div class="contentinner home">
+      <div class="container">
+        <div class="profile">
+          <div class="gradient-circle">
+            <img src="assets/images/profile.jpg" alt="Sagar Shinde">
+          </div>
+          
+          <div class="stats">
+            <h1>Sagar Shinde</h1>
+            <div class="stat">
+              <h2>6+</h2>
+              <p>Years of experience</p>
+            </div>
+            <div class="stat">
+              <h2>60+</h2>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h2>12</h2>
+              <p>OpenSource Libraries</p>
+            </div>
+            <div class="stat">
+              <h2>50+</h2>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+          <h2 class="role">Full-Stack Developer_</h2>
+          <p class="role-description">
+            Sometimes five Imprimaturs are seen together dialogue-wise in the piazza of one 
+            title-page, complimenting and ducking each to other with their shaven reverences, 
+            whether the author, who stands by in perplexity at the foot of his epistle, shall 
+            to the press or to the sponge.
+          </p>
+          <div class="resume-btnotr">
+            <div class="resume-btninnr">
+              <button class="resume-button">Download Resume</button>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentinner mydomain">
+      <h1>What I Do</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-2">
+                <img width="50" src="assets/images/store.png" />
+              </div>
+              <div class="col-10">
+                <h5>E-commerce</h5>
+                <p>
+                  Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet
+                  ultricies ex lectus scelerisque nibh. Ut non sodales odio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-2">
+                <img width="50" src="assets/images/store.png" />
+              </div>
+              <div class="col-10">
+                <h5>E-commerce</h5>
+                <p>
+                  Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet
+                  ultricies ex lectus scelerisque nibh. Ut non sodales odio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-2">
+                <img width="50" src="assets/images/store.png" />
+              </div>
+              <div class="col-10">
+                <h5>E-commerce</h5>
+                <p>
+                  Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet
+                  ultricies ex lectus scelerisque nibh. Ut non sodales odio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-2">
+                <img width="50" src="assets/images/store.png" />
+              </div>
+              <div class="col-10">
+                <h5>E-commerce</h5>
+                <p>
+                  Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet
+                  ultricies ex lectus scelerisque nibh. Ut non sodales odio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentinner about">
+      <h1>About Me</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h5>I am Web Developer @ Oracle(OFSS)</h5>
+            <p>Praesent ut tortor consectetur, semper sapien non, lacinia augue. Aenean arcu libero, facilisis et nisi
+              non,
+              tempus faucibus tortor. Mauris vel nulla aliquam, pellentesque enim ac, faucibus tortor. Nulla odio nibh,
+              cursus
+              sit amet urna id, dignissim euismod augue.</p>
+            <p> Duis sollicitudin, libero porttitor rutrum ultrices, turpis lorem fermentum justo, quis ornare augue
+              tortor
+              non est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <ul>
+              <li>
+                <span>Age: </span><span>33</span>
+              </li>
+              <li>
+                <span>Residence: </span><span>INDIA</span>
+              </li>
+              <li>
+                <span>Address: </span><span>2/3, kalptaru hou. soc., gaodevi road, bhandup west, Mumbai 400 078</span>
+              </li>
+              <li>
+                <span>e-mail: </span><span>smshinde41291@gmail.com</span>
+              </li>
+              <li>
+                <span>Phone: </span><span>+91 80822 70400</span>
+              </li>
+              <li>
+                <span>Skype: </span><span>smshinde41291</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="contentinner skills">
+      <h1>Skills</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1 col-sm-1 col-md-1">
+            <img width="80" src="assets/images/techlogo/angular.svg" />
+          </div>
+          <div class="col-xs-1 col-sm-1 col-md-1">
+            <img width="80" src="assets/images/techlogo/react.svg" />
+          </div>
+          <div class="col-sm-2 col-md-1">
+            <img width="80" src="assets/images/techlogo/aspnet.svg" />
+          </div>
+          <div class="col-sm-2 col-md-1">
+            <img width="80" src="assets/images/techlogo/sql.svg" />
+          </div>
+          <div class="col-sm-1 col-md-1">
+            <img width="80" src="assets/images/techlogo/python.svg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <img width="80" src="assets/images/techlogo/mongo.svg" />
+          </div>
+          <div class="col-sm-1 col-md-1">
+            <img width="80" src="assets/images/techlogo/java.svg" />
+          </div>
+          <div class="col-sm-1 col-md-1">
+            <img width="80" src="assets/images/techlogo/html-5.svg" />
+          </div>
+          <div class="col-sm-1 col-md-1">
+            <img width="80" src="assets/images/techlogo/nodejs.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentinner experience">
+      <h1>Experience</h1>
+      <div class="education-innr">
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="description">
+                <h6>Graphic Design</h6>
+                <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet
+                  urna. Quisque fringilla mollis risus, eu pulvinar dolor.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-cont">
+              <div class="year">2008 - Current</div>
+              <div class="university">University of Studies</div>
+            </div>
+
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="description">
+                <h6>Graphic Design</h6>
+                <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet
+                  urna. Quisque fringilla mollis risus, eu pulvinar dolor.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-cont">
+              <div class="year">2007</div>
+              <div class="university">University of Studies</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentinner education">
+      <h1>Education</h1>
+      <div class="education-innr">
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="description">
+                <h6>Graphic Design</h6>
+                <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet
+                  urna. Quisque fringilla mollis risus, eu pulvinar dolor.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-cont">
+              <div class="year">2008</div>
+              <div class="university">University of Studies</div>
+            </div>
+
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <div class="description">
+                <h6>Graphic Design</h6>
+                <p>Aliquam tincidunt malesuada tortor vitae iaculis. In eu turpis iaculis, feugiat risus quis, aliquet
+                  urna. Quisque fringilla mollis risus, eu pulvinar dolor.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-cont">
+              <div class="year">2007</div>
+              <div class="university">University of Studies</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentinner portfolio">
+      <h1>Portfolio</h1>
+      <div class="portfolio-otr">
+        <div class="portfolio-list">
+          <ul>
+            <li>
+              <img width="300" src="assets/images/5754544_2973413.jpg" />
+            </li>
+            <li>
+              <img width="300" src="assets/images/5754544_2973413.jpg" />
+            </li>
+            <li>
+              <img width="300" src="assets/images/5754544_2973413.jpg" />
+            </li>
+            <li>
+              <img width="300" src="assets/images/5754544_2973413.jpg" />
+            </li>
+            <li>
+              <img width="300" src="assets/images/5754544_2973413.jpg" />
+            </li>
+            <li>
+              <img width="300" src="assets/images/5754544_2973413.jpg" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contentinner articles">
+      <h1>Articles</h1>
+      <div class="articles-otr">
+        <div class="articles-list">
+          <ul>
+            <li>
+              <h3>article 1</h3>
+              <div>
+                <img width="300" src="assets/images/rb_2148807389.png" />
+              </div>
+              <div>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+              </div>
+            </li>
+            <li>
+              <h3>article 1</h3>
+              <div>
+                <img width="300" src="assets/images/rb_2148807389.png" />
+              </div>
+              <div>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+              </div>
+            </li>
+            <li>
+              <h3>article 1</h3>
+              <div>
+                <img width="300" src="assets/images/rb_2148807389.png" />
+              </div>
+              <div>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+              </div>
+            </li>
+            <li>
+              <h3>article 1</h3>
+              <div>
+                <img width="300" src="assets/images/rb_2148807389.png" />
+              </div>
+              <div>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+                <p>This is the content area. On desktop, you'll see the sidebar on the left. On mobile, it turns into a
+                  bottom
+                  navigation bar.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="contentinner contact">
+      <h1>Contact</h1>
+      <div class="cont-info">
+        <div>8082270400</div>
+        <div>bhandup, Mumbai</div>
+        <div>smshinde41291@gmail.com</div>
+        <div>linked In</div>
+      </div>
+
+      <br><br>
+
+      <h5>How Can I Help You?</h5>
+      <div class="cont-form">
+        <div class="cont-inptout">
+          <div class="cont-title">Full Name</div>
+          <div class="cont-inptinnr">
+            <input type="text" placeholder="Full Name" /><br>
+            <span class="cont-erro">enter full name.</span>
+          </div>
+        </div>
+        <div class="cont-inptout">
+          <div class="cont-title">Email Address</div>
+          <div class="cont-inptinnr">
+            <input type="text" placeholder="Email Address" /><br>
+            <span class="cont-erro">enter email address.</span>
+          </div>
+        </div>
+        <div class="cont-inptout">
+          <div class="cont-title">Mobile Number</div>
+          <div class="cont-inptinnr">
+            <input type="text" placeholder="Mobile Number" /><br>
+            <span class="cont-erro">enter mobile number.</span>
+          </div>
+        </div>
+        <div class="cont-inptout">
+          <div class="cont-title">Subject</div>
+          <div class="cont-inptinnr">
+            <input type="text" placeholder="Subject" /><br>
+            <span class="cont-erro">enter subject.</span>
+          </div>
+        </div>
+
+        <div class="cont-inptout">
+          <div class="cont-title">Message</div>
+          <div class="cont-inptinnr">
+            <textarea placeholder="Message"></textarea><br>
+            <span class="cont-erro">enter message.</span>
+          </div>
+        </div>
+        <div class="cont-inptout">
+
+          <div class="cont-inptinnr">
+            <input type="button" name="btnSubmit" value="Send Message" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
