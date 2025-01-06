@@ -9,8 +9,15 @@ body {
   max-width: 100%;
 }
 
+ul,
 li {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 5px;
 }
 
 /* Desktop Sidebar */
@@ -182,7 +189,14 @@ li {
 
 /* hero component end */
 
-
+.about li span:first-child {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(135deg, #68dd36, #3b82f6);
+  border-image-slice: 1;
+  display: inline-block;
+  padding: 10px 0px 0px 0px;
+  margin-right: 10px;
+}
 
 .skills-innr {}
 
@@ -212,8 +226,7 @@ li {
 
 .timeline {
   position: relative;
-  margin-left: 20px;
-  padding-left: 20px;
+
 }
 
 .timeline::before {
@@ -221,7 +234,7 @@ li {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 20%;
+  left: 35%;
   width: 2px;
   background-color: #4b4c4c;
 }
@@ -243,7 +256,7 @@ li {
   height: 12px;
   position: absolute;
   top: 10px;
-  left: calc(20% - 21px);
+  left: calc(33%);
   background-color: #222222;
   border: 2px solid #00bcd4;
   -moz-border-radius: 50%;
@@ -252,10 +265,11 @@ li {
 
 .timeline-cont {
   width: 25%;
+  margin-right: 25%;
 }
 
 .timeline-content {
-  width: 40%;
+  width: 80%;
 }
 
 .year {
@@ -275,6 +289,44 @@ li {
   line-height: 1.6;
 }
 
+.cont-form{
+  max-width: 500px;
+  margin: 10px;
+}
+
+.cont-inptinnr{
+  margin-bottom: 10px;
+  
+}
+
+.cont-title{
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.cont-inptinnr input,
+textarea {
+  border: 0;
+  background: #2e2e32;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  color: #fff;
+}
+
+.cont-inptinnr .cont-erro{
+ display: none;
+}
+
+.cont-inptinnr input[type=button]{
+  background: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+
 /* Mobile Bottom Navigation */
 @media (max-width: 768px) {
   .sidebar {
@@ -284,26 +336,34 @@ li {
   .bottom-nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60px;
     background-color: #343a40;
     color: white;
     z-index: 1000;
   }
 
-  .bottom-nav a {
+  .bottom-nav-innr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .bottom-nav-innr a {
     text-align: center;
     color: white;
     font-size: 14px;
     text-decoration: none;
     flex: 1;
+    padding: 0 23px;
   }
 
-  .bottom-nav a img {
+  .bottom-nav-innr a img {
     width: 24px;
     height: 24px;
     display: block;
